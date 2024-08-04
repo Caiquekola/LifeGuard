@@ -1,0 +1,63 @@
+#map {
+    height: 300px; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+.btn-custom {
+    position: fixed; 
+    bottom: 20px; 
+    left: 10px; 
+    right: 10px; 
+    max-width: calc(100% - 20px); 
+    background-color: #213644 !important; 
+    border: 2px solid #213644 !important; 
+    color: rgb(255, 255, 255) !important; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+.btn-custom:disabled {
+    background-color: #213644 !important;
+    color: rgba(255, 255, 255, 0.6) !important; /* Cor do texto em um tom mais claro */
+    border: 2px solid #213644 !important;
+    opacity: 1; /* Opacidade reduzida para indicar que está desabilitado */
+    cursor: not-allowed; /* Muda o cursor para indicar que está desabilitado */
+}
+
+
+.gps-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: #213644;
+    border-radius: 50%;
+    border: 2px solid #213644;
+    color: #f0f0f0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000; 
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #213644;
+    border-color: #213644;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.form-control {
+    background-color: #fff; /* Cor de fundo padrão para o input */
+}
