@@ -9,8 +9,8 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Link CSS-->
-    <link rel="stylesheet" href="styles.css">
-    <title>LifeGuard</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>LifeGuard</title><link rel="icon" href="/images/logo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -20,16 +20,30 @@
         <div class="container">
             <nav>
                 <!--Clicando na logo, redireciona para a página inicial-->
-                <a href="index.html">
-                    <img class="imglogo" src="img/lifeguard_logo.png" alt="Logo" height="10%"
+                <a href="/assets/home.html">
+                    <img class="imglogo" src="/images/lifeguard_logo.png" alt="Logo" height="10%"
                         width="30%" style="margin-left: 30px; margin-bottom: 5px;">
                 </a>
                 <ul class="ul">
-                    <a href="index.html"><b>Ínicio</b></a>
-                    <a href="emergencias.html"><b>Emergências</b></a>
+                    <a href="/assets/home.html"><b>Ínicio</b></a>
                     <a href="recursosEducativos.html"><b>Recursos Educativos</b></a>
-                    <a href="contato.html"><b>Contato</b></a>
-                    <a class="btn" href="login.html"><b>Login</b></a>
+                    <a href="/assets/contato.html"><b>Contato</b></a>
+                    <a class="btn" href="javascript:void(0);" id="btnEmergencias"><b>Emergências</b></a>
+                    <!-- Menu Lateral -->
+                    <div id="sideMenu" class="side-menu">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeSideMenu()">&times;</a>
+                        <a href="Terremotos.html">Terremotos</a>
+                        <a href="deslizamentoDeTerra.html">Deslizamento de terra</a>
+                        <a href="Enchentes&Inundacoes.html">Enchentes e inundações</a>
+                        <a href="erupcoesVulcanicas.html">Erupções vulcanicas</a>
+                        <a href="Furacões&Tufões.html">Furacões e tufões</a>
+                        <a href="nevascas.html">Nevascas</a>
+                        <a href="ondasDeCalor.html">Ondas de calor</a>
+                        <a href="secas.html">Secas</a>
+                        <a href="TempestadesTropicais.html">Tempestades tropicais</a>
+                        <a href="tornados.html">Tornados</a>
+                        <a href="tsunamis.html">Tsunamis</a>
+                    </div>
                     <div class="close-icon" onclick="closeMenu()">
                         <i class="fa fa-times-circle"></i>
                     </div>
@@ -41,7 +55,7 @@
         </div>
         </header>
         <!--Final header-->
-        <div class="banner-emergencia" style="background-image: url('img/tornado.png');padding-top: 80px; padding-bottom: 0;">
+        <div class="banner-emergencia" style="background-image: url('/images/tornado.png');padding-top: 80px; padding-bottom: 0;">
             <section class="banner">
                 <div class="banner-text">
                     <h1>Tornados</h1>
@@ -53,7 +67,7 @@
         <div class="container">
             <div class="riscos-Impactos-text">
                 <h3>Riscos e Impactos</h3>
-                <img src="img/riscos.png" style="width: 250px; padding-left: 50px; padding-top: 20px;" alt="">
+                <img src="/images/riscos.png" style="width: 250px; padding-left: 50px; padding-top: 20px;" alt="">
             </div>
             <div class="riscos-Impactos-img">
                 <ul class="ul-lista">
@@ -129,7 +143,7 @@
             </div>
             <div class="apos-text">
                 <h3>Após a Emergência</h3>
-                <img src="img/apos.png" style="width: 250px; padding-left: 40px; padding-top: 20px;" alt="">
+                <img src="/images/apos.png" style="width: 250px; padding-left: 40px; padding-top: 20px;" alt="">
             </div>
         </div>
         <!--Final Container-->
@@ -140,7 +154,7 @@
         <p>&copy; 2024 LifeGuard. Todos os direitos reservados.</p>
     </div>
 </footer>
-<script src="menu.js"></script>
+<script src="/js/menu.js"></script>
 </body>
 
 </html>
