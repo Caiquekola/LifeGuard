@@ -1,0 +1,129 @@
+body {
+    background-color: #AAD3DF; /* Cor de fundo ajustada */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    position: relative; /* Necessário para posicionar o botão fixo */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da viewport */
+}
+
+/* #AAD3DF */
+
+.container {
+    padding-bottom: 80px; /* Adiciona espaço para o botão fixo */
+}
+
+#map {
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Aumenta o espaçamento abaixo do mapa */
+}
+
+.btn-custom {
+    position: fixed; /* Fixa o botão na parte inferior */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #213644 !important;
+    border: 2px solid #213644 !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: center;
+    padding: 10px;
+    margin: 0; /* Remove margens padrão */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+.btn-custom:disabled {
+    background-color: #213644 !important;
+    color: rgba(255, 255, 255, 0.6) !important; /* Cor do texto em um tom mais claro */
+    border: 2px solid #213644 !important;
+    opacity: 1; /* Opacidade reduzida para indicar que está desabilitado */
+    cursor: not-allowed; /* Muda o cursor para indicar que está desabilitado */
+}
+
+.gps-icon {
+    position: absolute;
+    bottom: 20px; /* Ajuste para não sobrepor o botão */
+    right: 10px;
+    background-color: #213644;
+    border-radius: 50%;
+    border: 2px solid #213644;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #213644;
+    border-color: #213644;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+.form-control {
+    background-color: #fff; /* Cor de fundo padrão para o input */
+}
+
+#logo-container {
+    text-align: center;
+    margin-top: 0px; /* Reduzir o espaçamento acima da imagem */
+    margin-bottom: 0px; /* Reduzir o espaçamento abaixo da imagem */
+}
+
+#logo-container img {
+    max-width: 100%; /* Ajustar para 50% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    transform: scale(1); /* Reduz o tamanho da imagem para metade */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #map {
+        height: 250px;
+    }
+
+    .btn-custom {
+        padding: 8px;
+    }
+
+    .gps-icon {
+        bottom: 70px; /* Ajuste para dispositivos menores */
+    }
+
+    .input-group {
+        margin-top: 5px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    #map {
+        height: 200px;
+    }
+
+    .btn-custom {
+        padding: 6px;
+    }
+
+    .gps-icon {
+        bottom: 60px; /* Ajuste para dispositivos muito pequenos */
+    }
+
+    .input-group {
+        margin-top: 3px;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonte Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <title>LifeGuard</title>
+</head>
+
+<body>
+    <!--Inicio header-->
+    <header>
+        <!--Inicio Container-->
+        <div class="container">
+            <nav>
+                <!--Clicando na logo, redireciona para a página inicial-->
+                <a href="index.html">
+                    <img class="imglogo" src="img/lifeguard_logo.png" alt="Logo" height="10%"
+                        width="30%" style="margin-left: 30px; margin-bottom: 5px;">
+                </a>
+                <ul class="ul">
+                    <a href="index.html"><b>Ínicio</b></a>
+                    <a href="emergencias.html"><b>Emergências</b></a>
+                    <a href="recursosEducativos.html"><b>Recursos Educativos</b></a>
+                    <a href="contato.html"><b>Contato</b></a>
+                    <a class="btn" href="login.html"><b>Login</b></a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </nav>
+        </div>
+        </header>
+        <!--Final header-->
+        <div class="banner-emergencia" style="background-image: url('img/secas.png');padding-top: 80px; padding-bottom: 0;">
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Secas</h1>
+                </div>
+            </section>
+        </div>
+    <section class="riscos-Impactos">
+        <!--Início Container-->
+        <div class="container">
+            <div class="riscos-Impactos-text">
+                <h3>Riscos e Impactos</h3>
+                <img src="img/riscos.png" style="width: 250px; padding-left: 50px; padding-top: 20px;" alt="">
+            </div>
+            <div class="riscos-Impactos-img">
+                <ul class="ul-lista">
+                    <li><b>Escassez de água potável</b></li>
+                    <li><b>Perdas agrícolas e econômicas</b></li>
+                    <li><b>Risco de incêndios florestais</b></li>
+                </ul>
+            </div>
+        </div>
+        <!--Final Container-->
+    </section>
+    <section class="medidas-prevencao">
+        <div class="container">
+            <h3>Medidas de Prevenção e Preparação</h3>
+            <p><b>Saiba como estar preparado em caso de emergencia!</b></p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-animado" id="botaoPopUP"><b>Medidas de prevenção</b></a>
+
+                <!-- Estrutura do modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Medidas de Prevenção</h2>
+                        <ul>
+                            <li><b>Implementar práticas de conservação de água.</b></li>
+                            <li><b>Planejar uso eficiente de água em atividades diárias.</b></li>
+                            <li><b>Estocar água potável em casos de escassez.</b></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+            </div>
+        </div>
+    </section>
+    <section class="acoes">
+        <div class="container">
+            <h3>O que fazer durante a Emergência</h3>
+            <div class="cards">
+                <!--Card item 1-->
+                <div class="card-item">
+                    <p class="nome-acoes">Não deixe de se hidratar</p>
+                    <p class="desc-acoes">Racionar o uso de água.
+                    </p>
+                </div>
+                <!--Final Card item 2-->
+                <!--Card item 2-->
+                <div class="card-item">
+                    <p class="nome-acoes">Cuidado com incêndios</p>
+                    <p class="desc-acoes">Monitorar avisos de risco de incêndios e agir conforme necessário.
+                    </p>
+                </div>
+                <!--Final Card item 2-->
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="apos">
+        <!--Início Container-->
+        <div class="container">
+            <div class="apos-img">
+                <ul class="ul-lista">
+                    <li><b>Buscar assistência de programas governamentais de suporte.</b></li>
+                    <li><b>Reestabelecer práticas sustentáveis de uso de água.</b></li>
+                    <li><b>Participar de programas de reabilitação de áreas afetadas.</b></li>
+                </ul>
+            </div>
+            <div class="apos-text">
+                <h3>Após a Emergência</h3>
+                <img src="img/apos.png" style="width: 250px; padding-left: 40px; padding-top: 20px;" alt="">
+            </div>
+        </div>
+        <!--Final Container-->
+    </section>
+ <!-- Rodapé -->
+ <footer>
+    <div class="container">
+        <p>&copy; 2024 LifeGuard. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script src="menu.js"></script>
+</body>
+
+</html>

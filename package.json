@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "algoliasearch": "^4.24.0"
+  },
+  "devDependencies": {
+    "poku": "^2.4.0"
+  }
+}

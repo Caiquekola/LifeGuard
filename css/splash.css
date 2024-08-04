@@ -1,0 +1,134 @@
+body {
+  background-color: #AAD3DF;
+  margin: 0;
+  padding: 0;
+  width: relative;
+  height: 100%;
+}
+
+#splash {
+  display: flex;
+  flex-direction: column; /* Ajusta a direção dos itens para coluna */
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#splash img {
+  max-width: 80%; /* Limita a largura da imagem para 80% da largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+}
+
+/* Quadrado de loading */
+.loader {
+  width: 48px; /* Tamanho padrão para computadores */
+  height: 48px;
+  margin: auto;
+  position: relative;
+}
+
+.loader:before {
+  content: '';
+  width: 48px; /* Tamanho padrão para computadores */
+  height: 5px;
+  background: #f0808050;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  border-radius: 50%;
+  animation: shadow324 0.5s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #213644;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  animation: jump7456 0.5s linear infinite;
+}
+
+@keyframes jump7456 {
+  15% {
+      border-bottom-right-radius: 3px;
+  }
+
+  25% {
+      transform: translateY(9px) rotate(22.5deg);
+  }
+
+  50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+  }
+
+  75% {
+      transform: translateY(9px) rotate(67.5deg);
+  }
+
+  100% {
+      transform: translateY(0) rotate(90deg);
+  }
+}
+
+@keyframes shadow324 {
+  0%,
+  100% {
+      transform: scale(1, 1);
+  }
+
+  50% {
+      transform: scale(1.2, 1);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #splash {
+    height: 60vh; /* Ajusta a altura para telas menores */
+  }
+
+  .loader {
+    width: 50px; /* Aumenta o tamanho do loader para telas menores */
+    height: 50px;
+  }
+
+  .loader:before {
+    width: 50px;
+    height: 5px;
+    top: 60px;
+  }
+
+  .loader:after {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #splash {
+    height: 50vh; /* Ajusta ainda mais para telas muito pequenas */
+  }
+
+  .loader {
+    width: 50px; /* Aumenta ainda mais o tamanho do loader para telas muito pequenas */
+    height: 50px;
+  }
+
+  .loader:before {
+    width: 50px;
+    height: 5px;
+    top: 60px;
+  }
+
+  .loader:after {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,2 +1,0 @@
-# LifeGuard
-Hackaton 

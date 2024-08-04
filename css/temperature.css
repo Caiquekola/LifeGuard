@@ -1,0 +1,32 @@
+/* temperature.css */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #213644; 
+}
+
+.health-condition {
+    display: inline-block;
+    width: 24%; /* Quatro quadrados por linha */
+    margin: 1%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.health-condition i {
+    font-size: 40px; /* Tamanho grande para os ícones */
+    margin-bottom: 10px;
+}
+
+.health-condition p {
+    font-size: 14px; /* Tamanho da legenda */
+    margin: 0;
+}
